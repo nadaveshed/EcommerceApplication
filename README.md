@@ -47,3 +47,31 @@ docker run -p 8080:8080 e-commerce-application
 Usage
 Use any HTTP client (e.g., Postman) to make requests to the API endpoints.
 Refer to the API documentation for details on the available endpoints and request/response formats.
+
+
+### Main Tasks:
+#### Design and build an e-commerce system and write the implementation of the following requirements:
+
+1. Product Catalog : The product catalog should be designed using the Composite pattern where ‘Product’ and ‘Category’ are components. ‘Category’ can contain ‘Product’ or ‘Category’ (as sub category) components. Implement:  methods to add/remove products or categories, and to display the product catalog.
+
+2. Inventory Management : Implement an inventory management system where ‘Product’ is the subject and ‘Inventory’ is the observer. Whenever the quantity of a product changes, the inventory should be updated accordingly.
+
+You need to build a RESTful API using a Java + springboot, use dockers as a container platform , I will run the container locally.
+
+#### Endpoints:
+1. provide a UML diagram for the system.
+2. create  a new product.
+3. create a new category.
+4. add product to category.
+5. add sub category to an existing category.
+6. for each add/ remove product update the inventory.
+7. send notification to the user when inventory of specific product is empty.
+
+#### Data Model:
+Choose data fields for category and product
+
+#### DB
+ Use a PostgresDB to store categories and products.
+
+#### Testing:
+  Write unit tests for each endpoint.
